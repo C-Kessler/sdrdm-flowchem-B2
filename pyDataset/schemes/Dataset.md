@@ -21,4 +21,9 @@ classDiagram
         +float value*
     }
     
+    class testclass {
+        +string key*
+        +float value*
+    }
+    
 ```
