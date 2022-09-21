@@ -1,14 +1,16 @@
 ```mermaid
 classDiagram
-    Root *-- Author
-    Root *-- Parameter
+    FlowChemistryProtocol *-- Author
+    FlowChemistryProtocol *-- Parameter
+    FlowChemistryProtocol *-- Flowmodule
     
-    class Root {
+    class FlowChemistryProtocol {
         +string description*
         +string title*
         +string subject*
         +Author[0..*] authors*
         +Parameter[0..*] parameters*
+        +Flowmodule[0..*] flowmodules*
     }
     
     class Author {
@@ -21,7 +23,7 @@ classDiagram
         +float value*
     }
     
-    class testclass {
+    class Flowmodule {
         +string key*
         +float value*
     }
