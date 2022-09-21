@@ -86,7 +86,7 @@ This is another object used to describe the parameters of given dataset. As a fi
   - Description: Respective value of a parameter
   - Dataverse: pyDaRUS.Process.method_parameters.value
 
-### Input Parameter
+### Input_Parameter
 - __key*__
   - Type: string
   - Description: Name of the parameter
