@@ -1,16 +1,18 @@
 ```mermaid
 classDiagram
     FlowChemistryProtocol *-- Author
-    FlowChemistryProtocol *-- Parameter
     FlowChemistryProtocol *-- Flowmodule
+    FlowChemistryProtocol *-- InputParameter
+    FlowChemistryProtocol *-- ResponseParameter
     
     class FlowChemistryProtocol {
         +string description*
         +string title*
         +string subject*
         +Author[0..*] authors*
-        +Parameter[0..*] parameters*
         +Flowmodule[0..*] flowmodules*
+        +InputParameter[0..*] inputparameters*
+        +ResponseParameter[0..*] responseparameters*
     }
     
     class Author {
@@ -18,12 +20,18 @@ classDiagram
         +string affiliation
     }
     
-    class Parameter {
+    class Flowmodule {
+        +string key*
+        +string id*
+        +string manufacturer
+    }
+    
+    class InputParameter {
         +string key*
         +float value*
     }
     
-    class Flowmodule {
+    class ResponseParameter {
         +string key*
         +float value*
     }

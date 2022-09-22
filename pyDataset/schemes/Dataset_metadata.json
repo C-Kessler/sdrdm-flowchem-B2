@@ -20,13 +20,17 @@
         "multiple": "True",
         "description": "Authors of this dataset."
       },
-      "parameters": {
-        "multiple": "True",
-        "description": "Parameters to start and configure some process"
-      },
       "flowmodules": {
         "multiple": "True",
         "description": "Equipment used in the flowprocess"
+      },
+      "inputparameters": {
+        "multiple": "True",
+        "description": "Parameters to start and configure some process"
+      },
+      "responseparameters": {
+        "multiple": "True",
+        "description": "Parameters determined in the flow process"
       }
     },
     "docstring": "This is the root of the data model and contains all objects defined in this example. While its good practice to have a single root, you can define as many roots as you like. Furthermore, the name does not have to be ```Root``` and can be any other name.\n"
@@ -44,7 +48,23 @@
     },
     "docstring": "This is another object that represents the author of the dataset. Please note, that the options here contain all required fields but also custom ones. In this example, the ```Dataverse``` option specifies where each field should be mapped, when exported to a Dataverse format. Hence, these options allow you to link your dataset towards any other data model without writing code by yourself.\n"
   },
-  "Parameter": {
+  "Flowmodule": {
+    "attributes": {
+      "key": {
+        "description": "Name of the flow module",
+        "dataverse": "pyDaRUS.Process.method_parameters.name"
+      },
+      "id": {
+        "description": "A unique id that should be findable in the flow scheme",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "manufacturer": {
+        "description": "Name of the manufacturer of the device"
+      }
+    },
+    "docstring": "This section should provide all details about the equipment of the setup.\n"
+  },
+  "InputParameter": {
     "attributes": {
       "key": {
         "description": "Name of the parameter",
@@ -57,7 +77,7 @@
     },
     "docstring": "This is another object used to describe the parameters of given dataset. As a final note, it is important to use the description of an object to its fullest. As you might noticed, the space in between the object definition ```###``` can be freely used to describe what this object is actually about. Ultimately, this gives you the opportunity to ensure users completely understand what the intention and use case of this object is in a readable way.\n"
   },
-  "Flowmodule": {
+  "ResponseParameter": {
     "attributes": {
       "key": {
         "description": "Name of the parameter",
@@ -68,6 +88,6 @@
         "dataverse": "pyDaRUS.Process.method_parameters.value"
       }
     },
-    "docstring": "just a short text."
+    "docstring": "A parameter which is determined from the process. Make sure to distinguish ResponseParameters and InputParameters."
   }
 }

@@ -62,7 +62,7 @@ This section should provide all details about the equipment of the setup.
   - Dataverse: pyDaRUS.Process.method_parameters.value
 - __manufacturer__
   - Type: string
-  - Descriptions: Name of the manufacturer of the device
+  - Description: Name of the manufacturer of the device
 
 ### InputParameter
 
