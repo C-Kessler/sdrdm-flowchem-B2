@@ -28,6 +28,7 @@ classDiagram
     
     class InputParameter {
         +string key*
+        +string id*
         +float value*
     }
     

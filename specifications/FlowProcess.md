@@ -72,6 +72,10 @@ This is another object used to describe the parameters of given dataset. As a fi
   - Type: string
   - Description: Name of the parameter
   - Dataverse: pyDaRUS.Process.method_parameters.name
+- __id*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
 - __value*__
   - Type: float
   - Description: Respective value of a parameter

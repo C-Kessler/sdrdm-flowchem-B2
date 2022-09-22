@@ -70,6 +70,10 @@
         "description": "Name of the parameter",
         "dataverse": "pyDaRUS.Process.method_parameters.name"
       },
+      "id": {
+        "description": "A unique id that should be findable in the flow scheme",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
       "value": {
         "description": "Respective value of a parameter",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
