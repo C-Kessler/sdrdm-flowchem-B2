@@ -22,14 +22,18 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: Author
   - Multiple: True
   - Description: Authors of this dataset.
-- __parameters*__
-  - Type: Parameter
-  - Multiple: True
-  - Description: Parameters to start and configure some process
 - __flowmodules*__
   - Type: Flowmodule
   - Multiple: True
   - Description: Equipment used in the flowprocess
+- __inputparameters*__
+  - Type: InputParameter
+  - Multiple: True
+  - Description: Parameters to start and configure some process
+- __responseparameters*__
+  - Type: ResponseParameter 
+  - Multiple: True
+  - Description: Parameters determined in the flow process
 
 ### Author
 
@@ -44,7 +48,23 @@ This is another object that represents the author of the dataset. Please note, t
   - Description: To which organization the author is affiliated to
   - Dataverse: pyDaRUS.Citation.author.affiliation
   
-### Parameter
+### Flowmodule
+
+This section should provide all details about the equipment of the setup.
+
+- __key*__
+  - Type: string
+  - Description: Name of the flow module
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+- __id*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __manufacturer__
+  - Type: string
+  - Descriptions: Name of the manufacturer of the device
+
+### InputParameter
 
 This is another object used to describe the parameters of given dataset. As a final note, it is important to use the description of an object to its fullest. As you might noticed, the space in between the object definition ```###``` can be freely used to describe what this object is actually about. Ultimately, this gives you the opportunity to ensure users completely understand what the intention and use case of this object is in a readable way.
 
@@ -57,9 +77,10 @@ This is another object used to describe the parameters of given dataset. As a fi
   - Description: Respective value of a parameter
   - Dataverse: pyDaRUS.Process.method_parameters.value
 
-### Flowmodule
 
-just a short text.
+### ResponseParameter
+
+A parameter which is determined from the process. Make sure to distinguish ResponseParameters and InputParameters.
 
 - __key*__
   - Type: string
