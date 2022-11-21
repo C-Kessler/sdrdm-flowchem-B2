@@ -36,7 +36,7 @@ This is the root of the data model and contains all objects defined in this exam
   - Description: Flow modules in the analysis part of the process
 - __capillaryconnections*__
   - Type: CapillaryConnection
-  - Multiple: True
+  - Multiple: True 
   - Description: A Capillary connection between two flow modules
 
 ### Author
@@ -51,6 +51,19 @@ This is another object that represents the author of the dataset. Please note, t
   - Type: string
   - Description: To which organization the author is affiliated to
   - Dataverse: pyDaRUS.Citation.author.affiliation
+
+### CapillaryConnection 
+
+This section should provide all details about the capillary connections of the setup.
+
+- __start*__
+  - Type: string
+  - Description: Name of the flow module
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+- __end*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
   
 ### FlowModule
 
@@ -106,19 +119,6 @@ This section should provide all details about the equipment of the setup.
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
 - __id*__
-  - Type: string
-  - Description: A unique id that should be findable in the flow scheme
-  - Dataverse: pyDaRUS.Process.method_parameters.value
-
-### CapillaryConnection 
-
-This section should provide all details about the capillary connections of the setup.
-
-- __start*__
-  - Type: string
-  - Description: Name of the flow module
-  - Dataverse: pyDaRUS.Process.method_parameters.name
-- __end*__
   - Type: string
   - Description: A unique id that should be findable in the flow scheme
   - Dataverse: pyDaRUS.Process.method_parameters.value

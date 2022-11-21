@@ -24,6 +24,11 @@ classDiagram
         +string affiliation
     }
     
+    class CapillaryConnection {
+        +string start*
+        +string end*
+    }
+    
     class FlowModule {
         +string key*
         +string id*
@@ -42,11 +47,6 @@ classDiagram
     class AnalysisModule {
         +string key*
         +string id*
-    }
-    
-    class CapillaryConnection {
-        +string start*
-        +string end*
     }
     
 ```
