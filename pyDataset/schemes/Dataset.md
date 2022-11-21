@@ -7,19 +7,19 @@ classDiagram
     FlowModule <-- SubstrateEluentModule
     
     class FlowChemistryProtocol {
-        +string description*
-        +string title*
-        +string subject*
+        +string description
+        +string title
+        +string subject
     }
     
     class Author {
-        +string name*
+        +string name
         +string affiliation
     }
     
     class FlowModule {
-        +string key*
-        +string id*
+        +string key
+        +string id
         +string manufacturer
         +string typenumber
         +string series
@@ -27,11 +27,11 @@ classDiagram
     }
     
     class ReactionModule {
-        +string test*
+        +string test
     }
     
     class AnalysisModule {
-        +string test*
+        +string test
     }
     
     class SubstrateEluentModule {
