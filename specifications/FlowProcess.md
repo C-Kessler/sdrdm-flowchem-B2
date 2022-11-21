@@ -6,27 +6,40 @@ This is the place where you can describe the complete module/dataset and give in
 
 This is the root of the data model and contains all objects defined in this example. While its good practice to have a single root, you can define as many roots as you like. Furthermore, the name does not have to be ```Root``` and can be any other name.
 
-- __description__
+- __description*__
   - Type: string
   - Description: Describes the content of the dataset.
   - Dataverse: pyDaRUS.Citation.description.text
-- __title__
+- __title*__
   - Type: string
   - Description: Title of the work
   - Dataverse: pyDaRUS.Citation.title
-- __subject__
+- __subject*__
   - Type: string
   - Description: Subject of matter linked to the dataset
   - Dataverse: pyDaRUS.Citation.subject
-- __authors__
+- __authors*__
   - Type: Author
-  - Description: Subject of matter linked to the dataset
+  - Multiple: True
+  - Description: Authors of this dataset.
+- __flowmodules*__
+  - Type: FlowModule
+  - Multiple: True
+  - Description: Equipment used in the flowprocess
+- __inputparameters*__
+  - Type: InputParameter
+  - Multiple: True
+  - Description: Parameters to start and configure some process
+- __ReactionModules*__
+  - Type: ReactionModule
+  - Multiple: True
+  - Description: Flow modules in the reaction part of the process
 
-### Author [_FlowChemistryProtocol_]
+### Author
 
 This is another object that represents the author of the dataset. Please note, that the options here contain all required fields but also custom ones. In this example, the ```Dataverse``` option specifies where each field should be mapped, when exported to a Dataverse format. Hence, these options allow you to link your dataset towards any other data model without writing code by yourself.
 
-- __name__
+- __name*__
   - Type: string
   - Description: Full name including given and family name
   - Dataverse: pyDaRUS.Citation.author.name
@@ -35,23 +48,22 @@ This is another object that represents the author of the dataset. Please note, t
   - Description: To which organization the author is affiliated to
   - Dataverse: pyDaRUS.Citation.author.affiliation
   
-### FlowModule [_FlowChemistryProtocol_]
+### FlowModule
 
 This section should provide all details about the equipment of the setup.
 
-- __key__
+- __key*__
   - Type: string
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
-- __id__
+- __id*__
   - Type: string
   - Description: A unique id that should be findable in the flow scheme
   - Dataverse: pyDaRUS.Process.method_parameters.value
 - __manufacturer__
   - Type: string
   - Description: Name of the manufacturer of the device
-<<<<<<< HEAD
-- __typenumber__
+- __type_number__
   - Type: string
   - Description: Exact type number given by the manufacturer of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
@@ -59,13 +71,15 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: The Series of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
-- __manuallink__
+- __manual_link__
   - Type: string
   - Description: Possibility to get the manual of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
-=======
+- __asd__
+  - Type: string
+  - Description: The Series of the device
+  - Dataverse: pyDaRUS.Process.method_parameters.value
 
->>>>>>> parent of ce80f55 (test)
 
 ### ReactionModule [_FlowModule_]
 
@@ -76,16 +90,15 @@ This section should provide all details about the equipment of the setup.
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
 
+
 ### AnalysisModule [_FlowModule_]
 
 This section should provide all details about the equipment of the setup.
 
-- __test22__
+- __key*__
   - Type: string
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
-<<<<<<< HEAD
-=======
 - __id*__
   - Type: string
   - Description: A unique id that should be findable in the flow scheme
@@ -93,17 +106,39 @@ This section should provide all details about the equipment of the setup.
 - __manufacturer__
   - Type: string
   - Description: Name of the manufacturer of the device
->>>>>>> parent of ce80f55 (test)
-
-### SubstrateEluentModule [_FlowModule_]
-
-This section should provide all details about the equipment of the setup.
-
-- __molarconcentration__
-  - Type: float
-  - Description: Molar concentration (molar)
-  - Dataverse: pyDaRUS.Process.method_parameters.value
-- __description__
+- __type_number__
   - Type: string
-  - Description: Name the components
+  - Description: Exact type number given by the manufacturer of the device
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+
+### InputParameter
+
+This is another object used to describe the parameters of given dataset. As a final note, it is important to use the description of an object to its fullest. As you might noticed, the space in between the object definition ```###``` can be freely used to describe what this object is actually about. Ultimately, this gives you the opportunity to ensure users completely understand what the intention and use case of this object is in a readable way.
+
+- __key*__
+  - Type: string
+  - Description: Name of the parameter
   - Dataverse: pyDaRUS.Process.method_parameters.name
+- __id*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __value*__
+  - Type: float
+  - Description: Respective value of a parameter
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+
+
+### ResponseParameter
+
+A parameter which is determined from the process. Make sure to distinguish ResponseParameters and InputParameters.
+
+- __key*__
+  - Type: string
+  - Description: Name of the parameter
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+- __value*__
+  - Type: float
+  - Description: Respective value of a parameter
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+

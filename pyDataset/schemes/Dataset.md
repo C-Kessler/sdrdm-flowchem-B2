@@ -1,31 +1,35 @@
 ```mermaid
 classDiagram
-    FlowChemistryProtocol <-- Author
-    FlowChemistryProtocol <-- FlowModule
     FlowModule <-- ReactionModule
     FlowModule <-- AnalysisModule
-    FlowModule <-- SubstrateEluentModule
     FlowChemistryProtocol *-- Author
+    FlowChemistryProtocol *-- FlowModule
+    FlowChemistryProtocol *-- InputParameter
+    FlowChemistryProtocol *-- ReactionModule
     
     class FlowChemistryProtocol {
-        +string description
-        +string title
-        +string subject
-        +Author authors
+        +string description*
+        +string title*
+        +string subject*
+        +Author[0..*] authors*
+        +FlowModule[0..*] flowmodules*
+        +InputParameter[0..*] inputparameters*
+        +ReactionModule[0..*] ReactionModules*
     }
     
     class Author {
-        +string name
+        +string name*
         +string affiliation
     }
     
     class FlowModule {
-        +string key
-        +string id
+        +string key*
+        +string id*
         +string manufacturer
-        +string typenumber
+        +string type_number
         +string series
-        +string manuallink
+        +string manual_link
+        +string asd
     }
     
     class ReactionModule {
@@ -33,12 +37,16 @@ classDiagram
     }
     
     class AnalysisModule {
-        +string test22
+        +string key*
+        +string id*
+        +string manufacturer
+        +string type_number
     }
     
-    class SubstrateEluentModule {
-        +float molarconcentration
-        +string description
+    class InputParameter {
+        +string key*
+        +string id*
+        +float value*
     }
     
 ```
