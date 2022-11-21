@@ -34,10 +34,18 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: ResponseParameter 
   - Multiple: True
   - Description: Parameters determined in the flow process
-- __reaction_modules*__
+- __reaction_modules__
   - Type: ReactionModule
   - Multiple: True
   - Description: Flow modules in the reaction part of the process
+- __analysis_modules__
+  - Type: AnalysisModule
+  - Multiple: True
+  - Description: Flow modules in the analysis part of the process
+- __substrate_eluent_modules__
+  - Type: SubstrateEluentModule
+  - Multiple: True
+  - Description: Substrates and Eluents in the process
 
 ### Author
 
@@ -79,41 +87,28 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Possibility to get the manual of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
-- __asd__
-  - Type: string
-  - Description: The Series of the device
-  - Dataverse: pyDaRUS.Process.method_parameters.value
 
 
 ### ReactionModule [_FlowModule_]
 
 This section should provide all details about the equipment of the setup.
 
-- __test__
-  - Type: string
-  - Description: Name of the flow module
-  - Dataverse: pyDaRUS.Process.method_parameters.name
-
 
 ### AnalysisModule [_FlowModule_]
 
 This section should provide all details about the equipment of the setup.
 
-- __key*__
+
+### SubstrateEluentModule [_FlowModule_]
+
+- __molar_concentration__
+  - Type: float
+  - Description: Molar concentration (molar)
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __description__
   - Type: string
-  - Description: Name of the flow module
+  - Description: Name the components
   - Dataverse: pyDaRUS.Process.method_parameters.name
-- __id*__
-  - Type: string
-  - Description: A unique id that should be findable in the flow scheme
-  - Dataverse: pyDaRUS.Process.method_parameters.value
-- __manufacturer__
-  - Type: string
-  - Description: Name of the manufacturer of the device
-- __type_number__
-  - Type: string
-  - Description: Exact type number given by the manufacturer of the device
-  - Dataverse: pyDaRUS.Process.method_parameters.value
 
 ### InputParameter
 

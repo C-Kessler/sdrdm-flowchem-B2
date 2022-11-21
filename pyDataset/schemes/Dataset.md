@@ -2,11 +2,14 @@
 classDiagram
     FlowModule <-- ReactionModule
     FlowModule <-- AnalysisModule
+    FlowModule <-- SubstrateEluentModule
     FlowChemistryProtocol *-- Author
     FlowChemistryProtocol *-- FlowModule
     FlowChemistryProtocol *-- InputParameter
     FlowChemistryProtocol *-- ResponseParameter
     FlowChemistryProtocol *-- ReactionModule
+    FlowChemistryProtocol *-- AnalysisModule
+    FlowChemistryProtocol *-- SubstrateEluentModule
     
     class FlowChemistryProtocol {
         +string description*
@@ -16,7 +19,9 @@ classDiagram
         +FlowModule[0..*] flowmodules*
         +InputParameter[0..*] inputparameters*
         +ResponseParameter[0..*] responseparameters*
-        +ReactionModule[0..*] ReactionModules*
+        +ReactionModule[0..*] reaction_modules
+        +AnalysisModule[0..*] analysis_modules
+        +SubstrateEluentModule[0..*] substrate_eluent_modules
     }
     
     class Author {
@@ -31,18 +36,17 @@ classDiagram
         +string type_number
         +string series
         +string manual_link
-        +string asd
     }
     
     class ReactionModule {
-        +string test
     }
     
     class AnalysisModule {
-        +string key*
-        +string id*
-        +string manufacturer
-        +string type_number
+    }
+    
+    class SubstrateEluentModule {
+        +float molar_concentration
+        +string description
     }
     
     class InputParameter {
