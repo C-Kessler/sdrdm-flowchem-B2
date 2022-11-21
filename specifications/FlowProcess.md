@@ -30,7 +30,7 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: InputParameter
   - Multiple: True
   - Description: Parameters to start and configure some process
-- __ReactionModules*__
+- __reactionmodules*__
   - Type: ReactionModule
   - Multiple: True
   - Description: Flow modules in the reaction part of the process
