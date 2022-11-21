@@ -75,10 +75,6 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Possibility to get the manual of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
-- __reactionmodules__
-  - Type: ReactionModule
-  - Multiple: True
-  - Description: Flow modules in the reaction part of the process
 
 ### ReactionModule [_FlowModule_]
 

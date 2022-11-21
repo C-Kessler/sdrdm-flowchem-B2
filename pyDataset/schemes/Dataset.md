@@ -7,7 +7,6 @@ classDiagram
     FlowChemistryProtocol *-- FlowModule
     FlowChemistryProtocol *-- AnalysisModule
     FlowChemistryProtocol *-- SubstrateEluentModule
-    FlowModule *-- ReactionModule
     
     class FlowChemistryProtocol {
         +string description*
@@ -31,7 +30,6 @@ classDiagram
         +string typenumber
         +string series
         +string manuallink
-        +ReactionModule[0..*] reactionmodules
     }
     
     class ReactionModule {
