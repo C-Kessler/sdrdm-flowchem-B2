@@ -20,6 +20,7 @@ This is the root of the data model and contains all objects defined in this exam
   - Dataverse: pyDaRUS.Citation.subject
 - __authors__
   - Type: Author
+  - Description: Subject of matter linked to the dataset
 
 ### Author [_FlowChemistryProtocol_]
 
