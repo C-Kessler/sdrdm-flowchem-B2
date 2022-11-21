@@ -23,6 +23,18 @@
       "flowmodules": {
         "multiple": "True",
         "description": "Equipment used in the flowprocess"
+      },
+      "reactionmodules": {
+        "multiple": "True",
+        "description": "Flow modules in the reaction part of the process"
+      },
+      "analysismodules": {
+        "multiple": "True",
+        "description": "Flow modules in the analysis part of the process"
+      },
+      "substrateeluentmodules": {
+        "multiple": "True",
+        "description": "Substrates and Eluents in the process"
       }
     },
     "docstring": "This is the root of the data model and contains all objects defined in this example. While its good practice to have a single root, you can define as many roots as you like. Furthermore, the name does not have to be ```Root``` and can be any other name.\n"
@@ -53,7 +65,7 @@
       "manufacturer": {
         "description": "Name of the manufacturer of the device"
       },
-      "type_number": {
+      "typenumber": {
         "description": "Exact type number given by the manufacturer of the device",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
       },
@@ -61,44 +73,42 @@
         "description": "The Series of the device",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
       },
-      "manual_link": {
+      "manuallink": {
         "description": "Possibility to get the manual of the device",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
-      },
-      "reactionmodules": {
-        "multiple": "True",
-        "description": "Flow modules in the reaction part of the process"
-      },
-      "analysismodules": {
-        "multiple": "True",
-        "description": "Flow modules in the analysis part of the process"
-      },
-      "substrateeluentmodules": {
-        "multiple": "True",
-        "description": "Substrates and Eluents in the process"
       }
     },
     "docstring": "This section should provide all details about the equipment of the setup.\n"
   },
   "ReactionModule": {
-    "attributes": {},
+    "attributes": {
+      "test": {
+        "description": "Name of the flow module",
+        "dataverse": "pyDaRUS.Process.method_parameters.name"
+      }
+    },
     "docstring": "This section should provide all details about the equipment of the setup.\n"
   },
   "AnalysisModule": {
-    "attributes": {},
+    "attributes": {
+      "test": {
+        "description": "Name of the flow module",
+        "dataverse": "pyDaRUS.Process.method_parameters.name"
+      }
+    },
     "docstring": "This section should provide all details about the equipment of the setup.\n"
   },
   "SubstrateEluentModule": {
     "attributes": {
-      "molar_concentration": {
+      "molarconcentration": {
         "description": "Molar concentration (molar)",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
       },
       "description": {
         "description": "Name the components",
-        "dataverse": "pyDaRUS.Process.method_parameters.value"
+        "dataverse": "pyDaRUS.Process.method_parameters.name"
       }
     },
-    "docstring": null
+    "docstring": "This section should provide all details about the equipment of the setup."
   }
 }
