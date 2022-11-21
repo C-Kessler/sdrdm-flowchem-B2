@@ -23,7 +23,7 @@ This is the root of the data model and contains all objects defined in this exam
   - Multiple: True
   - Description: Authors of this dataset.
 - __flowmodules*__
-  - Type: Flowmodule
+  - Type: FlowModule
   - Multiple: True
   - Description: Equipment used in the flowprocess
 - __inputparameters*__
@@ -48,7 +48,7 @@ This is another object that represents the author of the dataset. Please note, t
   - Description: To which organization the author is affiliated to
   - Dataverse: pyDaRUS.Citation.author.affiliation
   
-### Flowmodule
+### FlowModule
 
 This section should provide all details about the equipment of the setup.
 
@@ -65,7 +65,24 @@ This section should provide all details about the equipment of the setup.
   - Description: Name of the manufacturer of the device
 
 
-### ReactionModule [_Flowmodule_]
+### ReactionModule [_FlowModule_]
+
+This section should provide all details about the equipment of the setup.
+
+- __key*__
+  - Type: string
+  - Description: Name of the flow module
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+- __id*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __manufacturer__
+  - Type: string
+  - Description: Name of the manufacturer of the device
+
+
+### AnalysisModule [_FlowModule_]
 
 This section should provide all details about the equipment of the setup.
 

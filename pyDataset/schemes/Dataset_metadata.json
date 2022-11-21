@@ -48,7 +48,7 @@
     },
     "docstring": "This is another object that represents the author of the dataset. Please note, that the options here contain all required fields but also custom ones. In this example, the ```Dataverse``` option specifies where each field should be mapped, when exported to a Dataverse format. Hence, these options allow you to link your dataset towards any other data model without writing code by yourself.\n"
   },
-  "Flowmodule": {
+  "FlowModule": {
     "attributes": {
       "key": {
         "description": "Name of the flow module",
@@ -65,6 +65,22 @@
     "docstring": "This section should provide all details about the equipment of the setup.\n"
   },
   "ReactionModule": {
+    "attributes": {
+      "key": {
+        "description": "Name of the flow module",
+        "dataverse": "pyDaRUS.Process.method_parameters.name"
+      },
+      "id": {
+        "description": "A unique id that should be findable in the flow scheme",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "manufacturer": {
+        "description": "Name of the manufacturer of the device"
+      }
+    },
+    "docstring": "This section should provide all details about the equipment of the setup.\n"
+  },
+  "AnalysisModule": {
     "attributes": {
       "key": {
         "description": "Name of the flow module",
