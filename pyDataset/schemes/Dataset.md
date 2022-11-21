@@ -32,6 +32,7 @@ classDiagram
         +string key*
         +string id*
         +string manufacturer
+        +string type_number
     }
     
     class AnalysisModule {

@@ -80,6 +80,10 @@ This section should provide all details about the equipment of the setup.
 - __manufacturer__
   - Type: string
   - Description: Name of the manufacturer of the device
+- __type_number__
+  - Type: string
+  - Description: Exact type number given by the manufacturer of the device
+  - Dataverse: pyDaRUS.Process.method_parameters.value
 
 
 ### AnalysisModule [_FlowModule_]
