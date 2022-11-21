@@ -18,14 +18,6 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: string
   - Description: Subject of matter linked to the dataset
   - Dataverse: pyDaRUS.Citation.subject
-- __authors*__
-  - Type: Author
-  - Multiple: True
-  - Description: Authors of this dataset.
-- __flowmodules*__
-  - Type: FlowModule
-  - Multiple: True
-  - Description: Equipment used in the flowprocess
 
 ### Author
 

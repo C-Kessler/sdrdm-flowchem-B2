@@ -3,15 +3,11 @@ classDiagram
     FlowModule <-- ReactionModule
     FlowModule <-- AnalysisModule
     FlowModule <-- SubstrateEluentModule
-    FlowChemistryProtocol *-- Author
-    FlowChemistryProtocol *-- FlowModule
     
     class FlowChemistryProtocol {
         +string description*
         +string title*
         +string subject*
-        +Author[0..*] authors*
-        +FlowModule[0..*] flowmodules*
     }
     
     class Author {
