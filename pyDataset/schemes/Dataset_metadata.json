@@ -55,11 +55,31 @@
   "CapillaryConnection": {
     "attributes": {
       "start": {
-        "description": "Name of the flow module",
+        "description": "A unique ID of a Flowmodule (reaction / analysis) that should be findable in the flow scheme",
         "dataverse": "pyDaRUS.Process.method_parameters.name"
       },
       "end": {
-        "description": "A unique id that should be findable in the flow scheme",
+        "description": "A unique ID of a Flowmodule (reaction / analysis) that should be findable in the flow scheme",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "color": {
+        "description": "Color of the Capillary connection",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "material": {
+        "description": "Material of the Capillary connection",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "inner_diameter": {
+        "description": "Inner diameter of the Capillary connection in mm",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "length": {
+        "description": "Length of the Capillary connection in mm",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "ID": {
+        "description": "ID of the Capillary connection",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
       }
     },

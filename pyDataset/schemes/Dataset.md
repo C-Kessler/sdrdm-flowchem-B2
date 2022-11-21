@@ -27,6 +27,11 @@ classDiagram
     class CapillaryConnection {
         +string start*
         +string end*
+        +string color
+        +string material
+        +float inner_diameter
+        +float length
+        +string ID
     }
     
     class FlowModule {

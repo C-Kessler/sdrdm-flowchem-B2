@@ -58,12 +58,34 @@ This section should provide all details about the capillary connections of the s
 
 - __start*__
   - Type: string
-  - Description: Name of the flow module
+  - Description: A unique ID of a Flowmodule (reaction / analysis) that should be findable in the flow scheme
   - Dataverse: pyDaRUS.Process.method_parameters.name
 - __end*__
   - Type: string
-  - Description: A unique id that should be findable in the flow scheme
+  - Description: A unique ID of a Flowmodule (reaction / analysis) that should be findable in the flow scheme
   - Dataverse: pyDaRUS.Process.method_parameters.value
+- __color__
+  - Type: string
+  - Description: Color of the Capillary connection
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __material__
+  - Type: string
+  - Description: Material of the Capillary connection
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __inner_diameter__
+  - Type: float
+  - Description: Inner diameter of the Capillary connection in mm
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __length__
+  - Type: float
+  - Description: Length of the Capillary connection in mm
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __ID__
+  - Type: string
+  - Description: ID of the Capillary connection
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+
+
   
 ### FlowModule
 

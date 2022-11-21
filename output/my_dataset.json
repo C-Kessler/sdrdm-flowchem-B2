@@ -15,7 +15,7 @@
       "affiliation": "University of Marburg"
     }
   ],
-  "flowmodules": [
+  "reactionmodules": [
     {
       "id": "1",
       "key": "Substrate solutions",
@@ -48,7 +48,9 @@
       "manufacturer": "Agilent",
       "type_number": "G7115A",
       "series": "1290 Infinity II Series"
-    },
+    }
+  ],
+  "analysismodules": [
     {
       "id": "2",
       "key": "Autosampler",
@@ -97,17 +99,10 @@
       "series": "1290 Infinity II Series"
     }
   ],
-  "inputparameters": [
-    {
-      "id": "Inp1",
-      "key": "Feed concentration A",
-      "value": 0.5
-    }
-  ],
   "__source__": {
     "root": "FlowChemistryProtocol",
     "repo": "https://github.com/C-Kessler/sdrdm-flowchem-B2.git",
-    "commit": "20eae42dc635431e0907683c52e99d9fd8551ae2",
-    "url": "https://github.com/C-Kessler/sdrdm-flowchem-B2/tree/20eae42dc635431e0907683c52e99d9fd8551ae2"
+    "commit": "95cf8e8c05a03f88965effa8b64dd7c5ca7a93fb",
+    "url": "https://github.com/C-Kessler/sdrdm-flowchem-B2/tree/95cf8e8c05a03f88965effa8b64dd7c5ca7a93fb"
   }
 }
