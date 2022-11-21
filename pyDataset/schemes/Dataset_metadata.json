@@ -28,7 +28,7 @@
         "multiple": "True",
         "description": "Parameters to start and configure some process"
       },
-      "ReactionModules": {
+      "reactionmodules": {
         "multiple": "True",
         "description": "Flow modules in the reaction part of the process"
       }

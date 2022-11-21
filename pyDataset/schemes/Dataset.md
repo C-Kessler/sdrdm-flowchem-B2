@@ -14,7 +14,7 @@ classDiagram
         +Author[0..*] authors*
         +FlowModule[0..*] flowmodules*
         +InputParameter[0..*] inputparameters*
-        +ReactionModule[0..*] ReactionModules*
+        +ReactionModule[0..*] reactionmodules*
     }
     
     class Author {
