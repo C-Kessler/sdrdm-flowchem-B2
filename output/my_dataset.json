@@ -19,7 +19,7 @@
     {
       "id": "1",
       "key": "Substrate solutions",
-      "manufacturer": ""
+      "manufacturer": "Al"
     },
     {
       "id": "4",
@@ -32,30 +32,35 @@
       "id": "5",
       "key": "2-position/6-port-valve",
       "manufacturer": "Agilent",
+      "type_number": "G1170A",
       "series": "1290 Infinity II Series"
     },
     {
       "id": "9",
       "key": "Thermostatted HPLC column compartment with the microreactor",
       "manufacturer": "Agilent",
+      "type_number": "G7116B",
       "series": "1290 Infinity II Series"
     },
     {
       "id": "10",
       "key": "Inline DAD",
       "manufacturer": "Agilent",
+      "type_number": "G7115A",
       "series": "1290 Infinity II Series"
     },
     {
       "id": "2",
       "key": "Autosampler",
       "manufacturer": "Agilent",
+      "type_number": "G7129B",
       "series": "1290 Infinity II Series"
     },
     {
       "id": "3",
       "key": "Quaternary pump for analytics",
       "manufacturer": "Agilent",
+      "type_number": "G7104A",
       "series": "1290 Infinity II Series"
     },
     {
@@ -67,24 +72,28 @@
       "id": "7",
       "key": "Online DAD",
       "manufacturer": "Agilent",
+      "type_number": "G7115A",
       "series": "1290 Infinity II Series"
     },
     {
       "id": "8",
       "key": "Thermostatted HPLC column compartment with C-8-column",
       "manufacturer": "Agilent",
+      "type_number": "G7116B",
       "series": "1290 Infinity II Series"
     },
     {
       "id": "11",
       "key": "Fraction collector",
       "manufacturer": "Agilent",
+      "type_number": "G1364E",
       "series": "1290 Infinity II Series"
     },
     {
       "id": "12",
       "key": "ESI-MS",
       "manufacturer": "Agilent",
+      "type_number": "G6150B",
       "series": "1290 Infinity II Series"
     }
   ],
@@ -98,7 +107,7 @@
   "__source__": {
     "root": "FlowChemistryProtocol",
     "repo": "https://github.com/C-Kessler/sdrdm-flowchem-B2.git",
-    "commit": "21f2de547bf1cdf7f688c4499eebf6626e45d687",
-    "url": "https://github.com/C-Kessler/sdrdm-flowchem-B2/tree/21f2de547bf1cdf7f688c4499eebf6626e45d687"
+    "commit": "20eae42dc635431e0907683c52e99d9fd8551ae2",
+    "url": "https://github.com/C-Kessler/sdrdm-flowchem-B2/tree/20eae42dc635431e0907683c52e99d9fd8551ae2"
   }
 }

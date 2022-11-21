@@ -6,6 +6,7 @@ classDiagram
     FlowChemistryProtocol *-- FlowModule
     FlowChemistryProtocol *-- InputParameter
     FlowChemistryProtocol *-- ResponseParameter
+    FlowChemistryProtocol *-- ReactionModule
     
     class FlowChemistryProtocol {
         +string description*
@@ -15,6 +16,7 @@ classDiagram
         +FlowModule[0..*] flowmodules*
         +InputParameter[0..*] inputparameters*
         +ResponseParameter[0..*] responseparameters*
+        +ReactionModule[0..*] ReactionModules*
     }
     
     class Author {
