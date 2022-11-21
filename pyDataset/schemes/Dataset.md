@@ -1,5 +1,7 @@
 ```mermaid
 classDiagram
+    FlowChemistryProtocol <-- Author
+    FlowChemistryProtocol <-- FlowModule
     FlowModule <-- ReactionModule
     FlowModule <-- AnalysisModule
     FlowModule <-- SubstrateEluentModule
