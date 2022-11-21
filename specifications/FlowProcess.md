@@ -34,7 +34,7 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: ResponseParameter 
   - Multiple: True
   - Description: Parameters determined in the flow process
-- __ReactionModules*__
+- __reaction_modules*__
   - Type: ReactionModule
   - Multiple: True
   - Description: Flow modules in the reaction part of the process
