@@ -1,5 +1,6 @@
 ```mermaid
 classDiagram
+    Flowmodule <-- ReactionModule
     FlowChemistryProtocol *-- Author
     FlowChemistryProtocol *-- Flowmodule
     FlowChemistryProtocol *-- InputParameter

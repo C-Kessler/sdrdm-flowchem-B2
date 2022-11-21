@@ -65,7 +65,7 @@ This section should provide all details about the equipment of the setup.
   - Description: Name of the manufacturer of the device
 
 
-### ReactionModule [Flowmodule]
+### ReactionModule [_Flowmodule_]
 
 This section should provide all details about the equipment of the setup.
 
