@@ -26,6 +26,7 @@ classDiagram
         +string key*
         +string id*
         +string manufacturer
+        +string type_number
     }
     
     class ReactionModule {
@@ -33,12 +34,14 @@ classDiagram
         +string id*
         +string manufacturer
         +string type_number
+        +string series
     }
     
     class AnalysisModule {
         +string key*
         +string id*
         +string manufacturer
+        +string type_number
     }
     
     class InputParameter {
