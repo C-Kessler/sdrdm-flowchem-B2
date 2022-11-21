@@ -34,6 +34,10 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: ReactionModule
   - Multiple: True
   - Description: Flow modules in the reaction part of the process
+- __analysismodules*__
+  - Type: AnalysisModule
+  - Multiple: True
+  - Description: Flow modules in the analysis part of the process
 
 ### Author
 

@@ -31,6 +31,10 @@
       "reactionmodules": {
         "multiple": "True",
         "description": "Flow modules in the reaction part of the process"
+      },
+      "analysismodules": {
+        "multiple": "True",
+        "description": "Flow modules in the analysis part of the process"
       }
     },
     "docstring": "This is the root of the data model and contains all objects defined in this example. While its good practice to have a single root, you can define as many roots as you like. Furthermore, the name does not have to be ```Root``` and can be any other name.\n"
