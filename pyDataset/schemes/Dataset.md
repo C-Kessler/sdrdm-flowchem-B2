@@ -26,6 +26,12 @@ classDiagram
         +string manufacturer
     }
     
+    class ReactionModule {
+        +string key*
+        +string id*
+        +string manufacturer
+    }
+    
     class InputParameter {
         +string key*
         +string id*

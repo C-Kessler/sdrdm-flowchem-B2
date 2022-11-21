@@ -64,6 +64,22 @@
     },
     "docstring": "This section should provide all details about the equipment of the setup.\n"
   },
+  "ReactionModule": {
+    "attributes": {
+      "key": {
+        "description": "Name of the flow module",
+        "dataverse": "pyDaRUS.Process.method_parameters.name"
+      },
+      "id": {
+        "description": "A unique id that should be findable in the flow scheme",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "manufacturer": {
+        "description": "Name of the manufacturer of the device"
+      }
+    },
+    "docstring": "This section should provide all details about the equipment of the setup.\n"
+  },
   "InputParameter": {
     "attributes": {
       "key": {

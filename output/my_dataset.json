@@ -1,0 +1,33 @@
+{
+  "id": "flowchemistryprotocol0",
+  "description": "An Example process from Hone C. A., Kappe C. O. Towards the Standardization of Flow Chemistry Protocols for Organic Reactions, scheme1",
+  "title": "Flowchem Scheme 1",
+  "subject": "flowchem",
+  "authors": [
+    {
+      "id": "author0",
+      "name": "Hone",
+      "affiliation": "University of Graz"
+    }
+  ],
+  "flowmodules": [
+    {
+      "id": "Mod1",
+      "key": "Pump 1",
+      "manufacturer": "Company xy"
+    }
+  ],
+  "inputparameters": [
+    {
+      "id": "Inp1",
+      "key": "Feed concentration A",
+      "value": 0.5
+    }
+  ],
+  "__source__": {
+    "root": "FlowChemistryProtocol",
+    "repo": "https://github.com/C-Kessler/sdrdm-flowchem-B2.git",
+    "commit": "39ecad979d43304d3fadd5ea6979a14f3816a84c",
+    "url": "https://github.com/C-Kessler/sdrdm-flowchem-B2/tree/39ecad979d43304d3fadd5ea6979a14f3816a84c"
+  }
+}

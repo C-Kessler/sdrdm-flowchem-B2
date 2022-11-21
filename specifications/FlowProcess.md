@@ -64,6 +64,23 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Name of the manufacturer of the device
 
+
+### ReactionModule [Flowmodule]
+
+This section should provide all details about the equipment of the setup.
+
+- __key*__
+  - Type: string
+  - Description: Name of the flow module
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+- __id*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __manufacturer__
+  - Type: string
+  - Description: Name of the manufacturer of the device
+
 ### InputParameter
 
 This is another object used to describe the parameters of given dataset. As a final note, it is important to use the description of an object to its fullest. As you might noticed, the space in between the object definition ```###``` can be freely used to describe what this object is actually about. Ultimately, this gives you the opportunity to ensure users completely understand what the intention and use case of this object is in a readable way.
