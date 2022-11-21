@@ -26,6 +26,14 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: FlowModule
   - Multiple: True
   - Description: Equipment used in the flowprocess
+- __inputparameters*__
+  - Type: InputParameter
+  - Multiple: True
+  - Description: Parameters to start and configure some process
+- __responseparameters*__
+  - Type: ResponseParameter 
+  - Multiple: True
+  - Description: Parameters determined in the flow process
 - __reaction_modules__
   - Type: ReactionModule
   - Multiple: True
@@ -34,7 +42,7 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: AnalysisModule
   - Multiple: True
   - Description: Flow modules in the analysis part of the process
-- __substrate_eluent_modules*__
+- __substrate_eluent_modules__
   - Type: SubstrateEluentModule
   - Multiple: True
   - Description: Substrates and Eluents in the process
@@ -101,3 +109,34 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Name the components
   - Dataverse: pyDaRUS.Process.method_parameters.name
+
+### InputParameter
+
+This is another object used to describe the parameters of given dataset. As a final note, it is important to use the description of an object to its fullest. As you might noticed, the space in between the object definition ```###``` can be freely used to describe what this object is actually about. Ultimately, this gives you the opportunity to ensure users completely understand what the intention and use case of this object is in a readable way.
+
+- __key*__
+  - Type: string
+  - Description: Name of the parameter
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+- __id*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __value*__
+  - Type: float
+  - Description: Respective value of a parameter
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+
+
+### ResponseParameter
+
+A parameter which is determined from the process. Make sure to distinguish ResponseParameters and InputParameters.
+
+- __key*__
+  - Type: string
+  - Description: Name of the parameter
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+- __value*__
+  - Type: float
+  - Description: Respective value of a parameter
+  - Dataverse: pyDaRUS.Process.method_parameters.value
