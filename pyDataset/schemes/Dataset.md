@@ -31,7 +31,7 @@ classDiagram
     }
     
     class AnalysisModule {
-        +string test
+        +string test22
     }
     
     class SubstrateEluentModule {

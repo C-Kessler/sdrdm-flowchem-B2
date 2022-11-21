@@ -16,4 +16,4 @@
 #
 # Jan Range - 10/Jul/2022
 
-sdrdm generate --path ./specifications --out . --name pyDataset
+sdrdm generate --path ./specifications --out ./ --name pyDataset

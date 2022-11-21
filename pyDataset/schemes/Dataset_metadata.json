@@ -71,7 +71,7 @@
   },
   "AnalysisModule": {
     "attributes": {
-      "test": {
+      "test22": {
         "description": "Name of the flow module",
         "dataverse": "pyDaRUS.Process.method_parameters.name"
       }

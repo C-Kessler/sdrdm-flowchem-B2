@@ -73,7 +73,7 @@ This section should provide all details about the equipment of the setup.
 
 This section should provide all details about the equipment of the setup.
 
-- __test__
+- __test22__
   - Type: string
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
