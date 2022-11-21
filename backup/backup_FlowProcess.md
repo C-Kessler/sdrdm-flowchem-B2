@@ -98,3 +98,16 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Name the components
   - Dataverse: pyDaRUS.Process.method_parameters.name
+
+### Randomstuff 
+
+This section should provide all details about the equipment of the setup.
+
+- __molarconcentration__
+  - Type: float
+  - Description: Molar concentration (molar)
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __description__
+  - Type: string
+  - Description: Name the components
+  - Dataverse: pyDaRUS.Process.method_parameters.name
