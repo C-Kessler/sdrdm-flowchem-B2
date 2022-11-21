@@ -26,14 +26,6 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: FlowModule
   - Multiple: True
   - Description: Equipment used in the flowprocess
-- __analysismodules__
-  - Type: AnalysisModule
-  - Multiple: True
-  - Description: Flow modules in the analysis part of the process
-- __substrateeluentmodules__
-  - Type: SubstrateEluentModule
-  - Multiple: True
-  - Description: Substrates and Eluents in the process
 
 ### Author
 
