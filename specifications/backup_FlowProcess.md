@@ -26,6 +26,18 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: FlowModule
   - Multiple: True
   - Description: Equipment used in the flowprocess
+- __reactionmodules__
+  - Type: ReactionModule
+  - Multiple: True
+  - Description: Flow modules in the reaction part of the process
+- __analysismodules__
+  - Type: AnalysisModule
+  - Multiple: True
+  - Description: Flow modules in the analysis part of the process
+- __substrateeluentmodules__
+  - Type: SubstrateEluentModule
+  - Multiple: True
+  - Description: Substrates and Eluents in the process
 
 ### Author
 
@@ -55,7 +67,7 @@ This section should provide all details about the equipment of the setup.
 - __manufacturer__
   - Type: string
   - Description: Name of the manufacturer of the device
-- __type_number__
+- __typenumber__
   - Type: string
   - Description: Exact type number given by the manufacturer of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
@@ -63,3 +75,38 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: The Series of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
+- __manuallink__
+  - Type: string
+  - Description: Possibility to get the manual of the device
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+
+### ReactionModule [_FlowModule_]
+
+This section should provide all details about the equipment of the setup.
+
+- __test*__
+  - Type: string
+  - Description: Name of the flow module
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+
+### AnalysisModule [_FlowModule_]
+
+This section should provide all details about the equipment of the setup.
+
+- __test*__
+  - Type: string
+  - Description: Name of the flow module
+  - Dataverse: pyDaRUS.Process.method_parameters.name
+
+### SubstrateEluentModule [_FlowModule_]
+
+This section should provide all details about the equipment of the setup.
+
+- __molarconcentration__
+  - Type: float
+  - Description: Molar concentration (molar)
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __description__
+  - Type: string
+  - Description: Name the components
+  - Dataverse: pyDaRUS.Process.method_parameters.name

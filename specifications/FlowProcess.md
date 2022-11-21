@@ -26,15 +26,11 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: FlowModule
   - Multiple: True
   - Description: Equipment used in the flowprocess
-- __reactionmodules*__
-  - Type: ReactionModule
-  - Multiple: True
-  - Description: Flow modules in the reaction part of the process
-- __analysismodules*__
+- __analysismodules__
   - Type: AnalysisModule
   - Multiple: True
   - Description: Flow modules in the analysis part of the process
-- __substrateeluentmodules*__
+- __substrateeluentmodules__
   - Type: SubstrateEluentModule
   - Multiple: True
   - Description: Substrates and Eluents in the process
@@ -79,6 +75,10 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Possibility to get the manual of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
+- __reactionmodules__
+  - Type: ReactionModule
+  - Multiple: True
+  - Description: Flow modules in the reaction part of the process
 
 ### ReactionModule [_FlowModule_]
 

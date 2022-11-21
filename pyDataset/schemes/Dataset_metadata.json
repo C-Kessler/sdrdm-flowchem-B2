@@ -24,10 +24,6 @@
         "multiple": "True",
         "description": "Equipment used in the flowprocess"
       },
-      "reactionmodules": {
-        "multiple": "True",
-        "description": "Flow modules in the reaction part of the process"
-      },
       "analysismodules": {
         "multiple": "True",
         "description": "Flow modules in the analysis part of the process"
@@ -76,6 +72,10 @@
       "manuallink": {
         "description": "Possibility to get the manual of the device",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "reactionmodules": {
+        "multiple": "True",
+        "description": "Flow modules in the reaction part of the process"
       }
     },
     "docstring": "This section should provide all details about the equipment of the setup.\n"
