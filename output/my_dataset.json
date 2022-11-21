@@ -6,15 +6,86 @@
   "authors": [
     {
       "id": "author0",
-      "name": "Hone",
-      "affiliation": "University of Graz"
+      "name": "Tallarek, U.",
+      "affiliation": "University of Marburg"
+    },
+    {
+      "id": "author1",
+      "name": "B\u00f6th, J.-A.",
+      "affiliation": "University of Marburg"
     }
   ],
   "flowmodules": [
     {
-      "id": "Mod1",
-      "key": "Pump 1",
-      "manufacturer": "Company xy"
+      "id": "1",
+      "key": "Substrate solutions",
+      "manufacturer": ""
+    },
+    {
+      "id": "4",
+      "key": "Binary Pump for reaction control",
+      "manufacturer": "Agilent",
+      "type_number": "G7120A",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "5",
+      "key": "2-position/6-port-valve",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "9",
+      "key": "Thermostatted HPLC column compartment with the microreactor",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "10",
+      "key": "Inline DAD",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "2",
+      "key": "Autosampler",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "3",
+      "key": "Quaternary pump for analytics",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "6",
+      "key": "Eluents",
+      "manufacturer": ""
+    },
+    {
+      "id": "7",
+      "key": "Online DAD",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "8",
+      "key": "Thermostatted HPLC column compartment with C-8-column",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "11",
+      "key": "Fraction collector",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
+    },
+    {
+      "id": "12",
+      "key": "ESI-MS",
+      "manufacturer": "Agilent",
+      "series": "1290 Infinity II Series"
     }
   ],
   "inputparameters": [
@@ -27,7 +98,7 @@
   "__source__": {
     "root": "FlowChemistryProtocol",
     "repo": "https://github.com/C-Kessler/sdrdm-flowchem-B2.git",
-    "commit": "802690870b84f4e43ce6d68d33f53a41fbe47e45",
-    "url": "https://github.com/C-Kessler/sdrdm-flowchem-B2/tree/802690870b84f4e43ce6d68d33f53a41fbe47e45"
+    "commit": "21f2de547bf1cdf7f688c4499eebf6626e45d687",
+    "url": "https://github.com/C-Kessler/sdrdm-flowchem-B2/tree/21f2de547bf1cdf7f688c4499eebf6626e45d687"
   }
 }

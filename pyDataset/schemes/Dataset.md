@@ -28,14 +28,12 @@ classDiagram
         +string manufacturer
         +string type_number
         +string series
+        +string manual_link
+        +string asd
     }
     
     class ReactionModule {
-        +string key*
-        +string id*
-        +string manufacturer
-        +string type_number
-        +string series
+        +string test
     }
     
     class AnalysisModule {

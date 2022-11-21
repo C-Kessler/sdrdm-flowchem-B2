@@ -71,31 +71,24 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: The Series of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
+- __manual_link__
+  - Type: string
+  - Description: Possibility to get the manual of the device
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __asd__
+  - Type: string
+  - Description: The Series of the device
+  - Dataverse: pyDaRUS.Process.method_parameters.value
 
 
 ### ReactionModule [_FlowModule_]
 
 This section should provide all details about the equipment of the setup.
 
-- __key*__
+- __test__
   - Type: string
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
-- __id*__
-  - Type: string
-  - Description: A unique id that should be findable in the flow scheme
-  - Dataverse: pyDaRUS.Process.method_parameters.value
-- __manufacturer__
-  - Type: string
-  - Description: Name of the manufacturer of the device
-- __type_number__
-  - Type: string
-  - Description: Exact type number given by the manufacturer of the device
-  - Dataverse: pyDaRUS.Process.method_parameters.value
-- __series__
-  - Type: string
-  - Description: The Series of the device
-  - Dataverse: pyDaRUS.Process.method_parameters.value
 
 
 ### AnalysisModule [_FlowModule_]

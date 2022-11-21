@@ -68,30 +68,23 @@
       "series": {
         "description": "The Series of the device",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "manual_link": {
+        "description": "Possibility to get the manual of the device",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "asd": {
+        "description": "The Series of the device",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
       }
     },
     "docstring": "This section should provide all details about the equipment of the setup.\n"
   },
   "ReactionModule": {
     "attributes": {
-      "key": {
+      "test": {
         "description": "Name of the flow module",
         "dataverse": "pyDaRUS.Process.method_parameters.name"
-      },
-      "id": {
-        "description": "A unique id that should be findable in the flow scheme",
-        "dataverse": "pyDaRUS.Process.method_parameters.value"
-      },
-      "manufacturer": {
-        "description": "Name of the manufacturer of the device"
-      },
-      "type_number": {
-        "description": "Exact type number given by the manufacturer of the device",
-        "dataverse": "pyDaRUS.Process.method_parameters.value"
-      },
-      "series": {
-        "description": "The Series of the device",
-        "dataverse": "pyDaRUS.Process.method_parameters.value"
       }
     },
     "docstring": "This section should provide all details about the equipment of the setup.\n"
