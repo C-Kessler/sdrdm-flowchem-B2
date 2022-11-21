@@ -5,9 +5,9 @@ classDiagram
     FlowModule <-- SubstrateEluentModule
     FlowChemistryProtocol *-- Author
     FlowChemistryProtocol *-- FlowModule
-    FlowChemistryProtocol *-- ReactionModule
-    FlowChemistryProtocol *-- AnalysisModule
-    FlowChemistryProtocol *-- SubstrateEluentModule
+    FlowModule *-- ReactionModule
+    FlowModule *-- AnalysisModule
+    FlowModule *-- SubstrateEluentModule
     
     class FlowChemistryProtocol {
         +string description*
@@ -15,9 +15,6 @@ classDiagram
         +string subject*
         +Author[0..*] authors*
         +FlowModule[0..*] flowmodules*
-        +ReactionModule[0..*] reaction_modules
-        +AnalysisModule[0..*] analysis_modules
-        +SubstrateEluentModule[0..*] substrate_eluent_modules*
     }
     
     class Author {
@@ -32,6 +29,9 @@ classDiagram
         +string type_number
         +string series
         +string manual_link
+        +ReactionModule[0..*] reactionmodules
+        +AnalysisModule[0..*] analysismodules
+        +SubstrateEluentModule[0..*] substrateeluentmodules
     }
     
     class ReactionModule {
