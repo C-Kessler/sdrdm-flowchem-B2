@@ -50,6 +50,7 @@ This section should provide all details about the equipment of the setup.
 - __manufacturer__
   - Type: string
   - Description: Name of the manufacturer of the device
+<<<<<<< HEAD
 - __typenumber__
   - Type: string
   - Description: Exact type number given by the manufacturer of the device
@@ -62,6 +63,9 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Possibility to get the manual of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
+=======
+
+>>>>>>> parent of ce80f55 (test)
 
 ### ReactionModule [_FlowModule_]
 
@@ -80,6 +84,16 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
+<<<<<<< HEAD
+=======
+- __id*__
+  - Type: string
+  - Description: A unique id that should be findable in the flow scheme
+  - Dataverse: pyDaRUS.Process.method_parameters.value
+- __manufacturer__
+  - Type: string
+  - Description: Name of the manufacturer of the device
+>>>>>>> parent of ce80f55 (test)
 
 ### SubstrateEluentModule [_FlowModule_]
 
