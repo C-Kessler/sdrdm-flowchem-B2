@@ -64,6 +64,10 @@
       "type_number": {
         "description": "Exact type number given by the manufacturer of the device",
         "dataverse": "pyDaRUS.Process.method_parameters.value"
+      },
+      "series": {
+        "description": "The Series of the device",
+        "dataverse": "pyDaRUS.Process.method_parameters.value"
       }
     },
     "docstring": "This section should provide all details about the equipment of the setup.\n"

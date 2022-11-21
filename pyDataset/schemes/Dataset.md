@@ -27,6 +27,7 @@ classDiagram
         +string id*
         +string manufacturer
         +string type_number
+        +string series
     }
     
     class ReactionModule {
