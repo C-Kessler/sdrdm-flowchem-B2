@@ -26,10 +26,6 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: FlowModule
   - Multiple: True
   - Description: Equipment used in the flowprocess
-- __inputparameters*__
-  - Type: InputParameter
-  - Multiple: True
-  - Description: Parameters to start and configure some process
 - __reactionmodules*__
   - Type: ReactionModule
   - Multiple: True
@@ -38,6 +34,10 @@ This is the root of the data model and contains all objects defined in this exam
   - Type: AnalysisModule
   - Multiple: True
   - Description: Flow modules in the analysis part of the process
+- __capillaryconnections*__
+  - Type: CapillaryConnection
+  - Multiple: True
+  - Description: A Capillary connection between two flow modules
 
 ### Author
 
@@ -79,11 +79,13 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Possibility to get the manual of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
-- __asd__
+- __manufacturer__
   - Type: string
-  - Description: The Series of the device
+  - Description: Name of the manufacturer of the device
+- __type_number__
+  - Type: string
+  - Description: Exact type number given by the manufacturer of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
-
 
 ### ReactionModule [_FlowModule_]
 
@@ -107,42 +109,16 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: A unique id that should be findable in the flow scheme
   - Dataverse: pyDaRUS.Process.method_parameters.value
-- __manufacturer__
-  - Type: string
-  - Description: Name of the manufacturer of the device
-- __type_number__
-  - Type: string
-  - Description: Exact type number given by the manufacturer of the device
-  - Dataverse: pyDaRUS.Process.method_parameters.value
 
-### InputParameter
+### CapillaryConnection 
 
-This is another object used to describe the parameters of given dataset. As a final note, it is important to use the description of an object to its fullest. As you might noticed, the space in between the object definition ```###``` can be freely used to describe what this object is actually about. Ultimately, this gives you the opportunity to ensure users completely understand what the intention and use case of this object is in a readable way.
+This section should provide all details about the capillary connections of the setup.
 
-- __key*__
+- __start*__
   - Type: string
-  - Description: Name of the parameter
+  - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
-- __id*__
+- __end*__
   - Type: string
   - Description: A unique id that should be findable in the flow scheme
   - Dataverse: pyDaRUS.Process.method_parameters.value
-- __value*__
-  - Type: float
-  - Description: Respective value of a parameter
-  - Dataverse: pyDaRUS.Process.method_parameters.value
-
-
-### ResponseParameter
-
-A parameter which is determined from the process. Make sure to distinguish ResponseParameters and InputParameters.
-
-- __key*__
-  - Type: string
-  - Description: Name of the parameter
-  - Dataverse: pyDaRUS.Process.method_parameters.name
-- __value*__
-  - Type: float
-  - Description: Respective value of a parameter
-  - Dataverse: pyDaRUS.Process.method_parameters.value
-

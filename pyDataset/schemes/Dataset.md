@@ -4,9 +4,9 @@ classDiagram
     FlowModule <-- AnalysisModule
     FlowChemistryProtocol *-- Author
     FlowChemistryProtocol *-- FlowModule
-    FlowChemistryProtocol *-- InputParameter
     FlowChemistryProtocol *-- ReactionModule
     FlowChemistryProtocol *-- AnalysisModule
+    FlowChemistryProtocol *-- CapillaryConnection
     
     class FlowChemistryProtocol {
         +string description*
@@ -14,9 +14,9 @@ classDiagram
         +string subject*
         +Author[0..*] authors*
         +FlowModule[0..*] flowmodules*
-        +InputParameter[0..*] inputparameters*
         +ReactionModule[0..*] reactionmodules*
         +AnalysisModule[0..*] analysismodules*
+        +CapillaryConnection[0..*] capillaryconnections*
     }
     
     class Author {
@@ -31,7 +31,8 @@ classDiagram
         +string type_number
         +string series
         +string manual_link
-        +string asd
+        +string manufacturer
+        +string type_number
     }
     
     class ReactionModule {
@@ -41,14 +42,11 @@ classDiagram
     class AnalysisModule {
         +string key*
         +string id*
-        +string manufacturer
-        +string type_number
     }
     
-    class InputParameter {
-        +string key*
-        +string id*
-        +float value*
+    class CapillaryConnection {
+        +string start*
+        +string end*
     }
     
 ```
