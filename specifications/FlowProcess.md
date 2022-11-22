@@ -136,11 +136,7 @@ This section should provide all details about the equipment of the setup.
 
 This section should provide all details about the equipment of the setup.
 
-- __key*__
+- __description__
   - Type: string
   - Description: Name of the flow module
   - Dataverse: pyDaRUS.Process.method_parameters.name
-- __id*__
-  - Type: string
-  - Description: A unique id that should be findable in the flow scheme
-  - Dataverse: pyDaRUS.Process.method_parameters.value
