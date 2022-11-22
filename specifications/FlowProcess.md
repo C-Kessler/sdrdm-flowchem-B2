@@ -84,8 +84,6 @@ This section should provide all details about the capillary connections of the s
   - Type: string
   - Description: ID of the Capillary connection
   - Dataverse: pyDaRUS.Process.method_parameters.value
-
-
   
 ### FlowModule
 
@@ -121,6 +119,10 @@ This section should provide all details about the equipment of the setup.
   - Type: string
   - Description: Exact type number given by the manufacturer of the device
   - Dataverse: pyDaRUS.Process.method_parameters.value
+- __operation_mode__
+  - Type: string
+  - Description: Operation mode of the Flow module
+  - Dataverse: pyDaRUS.Process.method_parameters.value
 
 ### ReactionModule [_FlowModule_]
 
@@ -128,7 +130,7 @@ This section should provide all details about the equipment of the setup.
 
 - __description__
   - Type: string
-  - Description: Name of the flow module
+  - Description: A description of the purpose of the module.
   - Dataverse: pyDaRUS.Process.method_parameters.name
 
 
@@ -138,5 +140,5 @@ This section should provide all details about the equipment of the setup.
 
 - __description__
   - Type: string
-  - Description: Name of the flow module
+  - Description: A description of the purpose of the module.
   - Dataverse: pyDaRUS.Process.method_parameters.name
